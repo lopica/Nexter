@@ -1,3 +1,5 @@
+@use "base";
+
 .homes {
   grid-column: center-start / center-end;
   margin: 15rem 0;
@@ -8,7 +10,7 @@
 }
 
 .home {
-  background-color: $color-grey-light-1;
+  background-color: base.$color-grey-light-1;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,7 +29,7 @@
   &__like {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    fill: $color-primary;
+    fill: base.$color-primary;
     height: 2.5rem;
     width: 2.5rem;
     z-index: 2;
@@ -43,11 +45,11 @@
     z-index: 3;
 
     width: 80%;
-    font-family: $font-display;
+    font-family: base.$font-display;
     font-size: 1.6rem;
     text-align: center;
     padding: 1.25rem;
-    background-color: $color-secondary;
+    background-color: base.$color-secondary;
     color: #fff;
     font-weight: 400;
     transform: translateY(50%);
@@ -62,7 +64,7 @@
   &__rooms,
   &__area,
   &__price {
-    font-family: $font-primary;
+    font-family: base.$font-primary;
     margin-left: 2rem;
 
     display: flex;
@@ -71,7 +73,7 @@
 
 
     svg {
-      fill: $color-primary;
+      fill: base.$color-primary;
       height: 2rem;
       width: 2rem;
     }

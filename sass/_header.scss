@@ -1,9 +1,11 @@
+@use "base";
+
 .header {
-  background-color: $color-grey-dark-1;
+  background-color: base.$color-grey-dark-1;
   grid-column: full-start / col-end 6;
   background-image: linear-gradient(
-      rgba($color-secondary, 0.93),
-      rgba($color-secondary, 0.93)
+      rgba(base.$color-secondary, 0.93),
+      rgba(base.$color-secondary, 0.93)
     ),
     url(../img/hero.jpeg);
   background-size: cover;
@@ -17,11 +19,11 @@
   gap: 1.5rem;
   justify-content: center;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: base.$bp-medium) {
     grid-column: 1 / -1;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: base.$bp-small) {
     padding: 5rem;
   }
 
@@ -51,7 +53,7 @@
 
   &__seenon-text {
     font-size: 1.6rem;
-    color: $color-grey-light-2;
+    color: base.$color-grey-light-2;
 
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
